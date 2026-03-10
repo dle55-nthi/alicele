@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+// import profilePic from "/profile-pic.jpeg";
 
 export default function Home() {
   return (
@@ -13,12 +14,13 @@ export default function Home() {
     <div className= "absolute top-80 w-full h-80 bg-[#FFFFFF]"></div>
 
     {/* =========== HEADER - NAME - IMAGE ============== */}
-    <div className="relative">
+    <div className="relative top-40 right-10 ">
       {/* VERTICAL NAME */}
-      <h1 className="absolute top-40 right-10 text-yellow-400 font-serif text-9xl rotate-90">Thi Le</h1>
+      <h1 className="absolute text-yellow-400 font-serif text-9xl rotate-90">Thi Le</h1>
+      {/* PROFILE PIC */}
+      <img src="/profile-pic.jpeg" alt="profile" ></img>
     </div>
     
-
     {/*============ "DRINK ME" BOTTLE button - Student Orgs button =============*/}
     <div className="absolute right-10 bottom-20 px-10 font-serif">
       <Link href="/studentorgs">picture</Link>
@@ -44,7 +46,7 @@ export default function Home() {
 
       <h1><b>Contact:</b></h1>
       <p>My email: nguyenthii.ledacc@gmail.com</p>
-      <a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a> <br></br>
+      <a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a>
       <a href = "https://github.com/">My GitHub</a>
     </div>
 

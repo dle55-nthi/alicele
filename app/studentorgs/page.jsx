@@ -1,8 +1,14 @@
 import React from 'react'
+// import background from 'public/background.jpg'
 
 const studentorgs = () => {
   return (
     <main className='font-serif'>
+      <div
+      className="absolute inset-0 -z-10 bg-cover bg-center"
+      style={{ backgroundImage: "url('/background.jpg')" }}
+    ></div>
+
       <div className='absolute right-80 top-5 w-60'>
         <h1><b>WiCS</b></h1>
         <p>I am a member of WiCS. Currently, I am participating in the Web Development Project, where I collaborate with other members to build and improve web-based applications.</p>

@@ -1,14 +1,19 @@
 import React from 'react'
 
+
 const projects = () => {
   return (
     <main className='font-serif'>
-    {/* <div  className=''>
-      <h1>Project</h1>
-      <p>In this semesters, i been working on some projects and here are my best ones so far.</p>
-    </div> */}
-    <div className='bg-[#A8E3F0]'></div>
-
+        
+    <div
+      className="min-h-screen"
+      style={{
+        background: "radial-gradient(circle at center, white 0%, #A8E3F0 100%)"
+      }}
+    ></div>
+    
+    <img className="absolute top-20 left-60" src="alice-card-bgrm.ong" width={350} height={600} alt="alice" ></img>
+    <img className="absolute bottom-20 right-60" src="rabbit-bgrm.ong" width={350} height={600} alt="rabbit" ></img>
     <div className='absolute left-10 top-20 w-150'>
       <h1><b>Funding System Simulation</b></h1>
       <p>

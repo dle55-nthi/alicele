@@ -2,7 +2,11 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div>feel free to email me if you want to have a group project or just want to connect!! dle55@uic.edu
+    <div>
+      Address: Chicago, IL 60607
+      My email: nguyenthii.ledacc@gmail.com
+      <a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a><br></br>
+      <a href = "https://github.com/">My GitHub</a>
     </div>
   )
 }

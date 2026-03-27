@@ -4,33 +4,14 @@ import React from 'react'
 const projects = () => {
   return (
     <main className='font-serif'>
-        
-    <div
-      className="min-h-screen"
-      style={{
-        background: "radial-gradient(circle at center, white 0%, #A8E3F0 100%)"
-      }}
-    ></div>
-    
-    <img className="absolute top-20 left-60" src="alice-card-bgrm.ong" width={350} height={600} alt="alice" ></img>
-    <img className="absolute bottom-20 right-60" src="rabbit-bgrm.ong" width={350} height={600} alt="rabbit" ></img>
-    <div className='absolute left-10 top-20 w-150'>
+    <div>
       <h1><b>Funding System Simulation</b></h1>
-      <p>
-        - Selected Microsoft Azure as the proposed cloud infrastructure and defined the technical roadmap, system scope, and implementation phases.<br></br>
-        - Built structured project plans and workflow tracking models in Excel to manage deliverables and timelines.<br></br>
-        - Partnered with QA to evaluate process efficiency, risk points, and outcome alignment, ensuring the proposed solution supported measurable business objectives. <br></br>
-      </p>
+      <p>Planned and scoped a cloud-based solution using Microsoft Azure, defining technical roadmap, system architecture, and implementation phases. Developed Excel-based project tracking models and collaborated with QA to assess risks, optimize processes, and ensure alignment with measurable business goals.</p>
     </div>
 
-    <div className='absolute right-20 bottom-20 w-150'>
+    <div>
       <h1><b>Database System Design - Restaurant Stimulation</b></h1>
-      <p>
-      - Designed and developed a relational database system to solve a real-world business problem.<br></br>
-      - Created an Entity-Relationship (ER) diagram and defined tables with appropriate primary and foreign keys. <br></br>
-      - Applied normalization techniques to ensure data integrity and reduce redundancy. <br></br>
-      - Implemented the database using SQL and wrote complex queries for data retrieval and analysis. <br></br>
-      </p>
+      <p>Designed and implemented a relational database to address a real-world business problem, including ER modeling, schema design, and normalization for data integrity. Built the system in SQL and developed complex queries to support efficient data retrieval and analysis.</p>
     </div>
 
 

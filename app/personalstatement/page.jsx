@@ -25,18 +25,17 @@ const statement = () => {
       <PinkContainer>
         <div className="text-columns" style={{ columnCount: 2, columnGap: "20px" }}>
           <div className="column">
-          Hi, my name is <b>Dac Nguyen Thi Le</b>, but you can call me Thi. 
+          <p>Hi, my name is <b>Dac Nguyen Thi Le</b>, but you can call me Thi. 
           I am currently a junior at the University of Illinois Chicago (UIC), 
-          majoring in <b>Data Science</b> with a concentration in Business Analytics. <br/>
-          Currently seeking a Chicago-based summer role where I can blend tech, analytics, and a little bit of curiosity ✨
+          majoring in <b>Data Science</b> with a concentration in Business Analytics.
+          Currently seeking a Chicago-based summer role where I can blend tech, analytics, and a little bit of curiosity ✨</p>
           <br></br>
           
-          Fun fact: I like braiding my hair (sometimes my friends' too)
+          <i syle={{fontSize:"8px"}}>Fun fact: I like braiding.</i>
 
             <div className="flex gap-2 flex-wrap mt-8">
-            Please feel free to reach out to me with these communication channels. Looking forward to connect with you too! <br></br>
-            Address: Chicago, IL 60607<br></br>
-            My email: nguyenthii.ledacc@gmail.com<br></br>
+            Please feel free to reach out to me. Looking forward to connect with you too! <br></br>
+            Email: nguyenthii.ledacc@gmail.com
               <div className="text-columns center" style={{ columnCount: 2, columnGap: "20px" }}>
                 <SmallBox><a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a><br></br></SmallBox>
                 <SmallBox><a href = "https://github.com/">My GitHub</a></SmallBox>

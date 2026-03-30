@@ -24,7 +24,7 @@ const projects = () => {
       
 
       <PinkContainer>
-      <div className="flex gap-4 flex-wrap mt-10">
+      <div className="flex gap-4 flex-wrap ">
         <SmallBox>
           <h1><b>Funding System Simulation</b></h1>
           <p>Planned and scoped a cloud-based solution using Microsoft Azure, defining technical roadmap, system architecture, and implementation phases. Developed Excel-based project tracking models and collaborated with QA to assess risks, optimize processes, and ensure alignment with measurable business goals.</p>

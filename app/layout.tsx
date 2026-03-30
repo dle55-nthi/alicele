@@ -1,15 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import { Mea_Culpa } from 'next/font/google';
-
-
-// const meaCulpa = Mea_Culpa({
-//   subsets: ['latin'],
-//   weight: '400',
-//   display: 'swap', 
-// });
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -47,7 +47,7 @@ export default function Home() {
           src="/profile.JPG"
           alt="Dac Nguyen Thi Le"
           className="rounded-full object-cover object-top"
-          style={{width: 400, height: 400}}
+          style={{width: 370, height: 370}}
         />
         <h1 className='absolute flex flex-col' style={{bottom:'0%', right:'0%', fontSize:'45px'}}>Thi Le</h1>
         <img src="/sticker button/home.png" className='absolute flex flex-col' style={{bottom:'0%', left:'0%'}} width={100}></img>

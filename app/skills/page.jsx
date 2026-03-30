@@ -26,7 +26,7 @@ export default function skills() {
         <div className="flex gap-4 flex-wrap text-center">
           <SmallBox>
             <div className="w-[100px] h-[100px] flex items-center justify-center" style={{alignItems:"center"}}>
-              <img src="/sticker button/R_logo.png" className="max-w-[100px] max-h-[100px] object-contain" />
+              <img src="/sticker button/c++.png" className="max-w-[100px] max-h-[100px] object-contain" />
             </div>
             <h1>Front-end Code</h1><br></br>
             <p>3/5</p>
@@ -50,7 +50,7 @@ export default function skills() {
 
           <SmallBox>
             <div className="w-[100px] h-[100px] flex items-center justify-center">
-              <img src="/sticker button/c++.png" className="max-w-[100px] max-h-[100px] object-contain" />
+              <img src="/sticker button/R_logo.png" className="max-w-[100px] max-h-[100px] object-contain" />
             </div>
             <h1>R/SAS</h1><br></br>
             <p>4/5</p>

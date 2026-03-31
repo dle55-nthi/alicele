@@ -3,25 +3,28 @@ import Link from 'next/link'
 import PinkContainer from "@/app/container"
 import SmallBox from "@/app/skills/component";
 import ReturnButton from "@/app/return-button";
+import { MenuButton } from "@/app/smaller-button";
 
 const projects = () => {
+  const buttons = [
+    {id: 1, link: "/personalstatement", picture: "/sticker button/rose.png", name: "about me!!"},
+    {id: 2, link: "/skills", picture: "/sticker button/teddy.png", name: "skills"},
+    {id: 3, link: "/studentorgs", picture: "/sticker button/balletshoes.png", name: "student orgs"},
+    // {id: 4, link: "/projects", picture: "/sticker button/pearl.png", name: "projects"}
+  ]
+    
   return (
     <main className='font-serif min-h-screen flex flex-col items-center justify-center'>
       <div className="flex gap-2 items-end mb-[-20px] self-end mr-60 z-10 relative">
-        <Link href="/statement" className="flex flex-col items-center">
-          <img src="/sticker button/rose.png" width={80} />
-          <span className="text-sm">about me!!</span>
-        </Link>
-        <Link href="/skills" className="flex flex-col items-center">
-          <img src="/sticker button/teddy.png" width={80} />
-          <span className="text-sm">skills</span>
-        </Link>
-        <Link href="/studentorgs" className="flex flex-col items-center">
-          <img src="/sticker button/balletshoes.png" width={80} />
-          <span className="text-sm">orgs</span>
-        </Link>
+        {buttons.map((buttons) => (
+          <MenuButton
+          key = {buttons.id}
+          link = {buttons.link}
+          picture = {buttons.picture}
+          name = {buttons.name}
+          />
+        ))}
       </div>
-      
 
       <PinkContainer>
       <div className="flex gap-4 flex-wrap ">

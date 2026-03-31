@@ -1,46 +1,26 @@
 import React from 'react'
 import Link from "next/link"
+import { MainPageButton } from "@/app/buttons"
 
 export default function Home() {
+  const buttons = [
+    {id: 1, link: "/personalstatement", picture: "/sticker button/rose.png", name: "about me!!"},
+    {id: 2, link: "/skills", picture: "/sticker button/teddy.png", name: "skills"},
+    {id: 3, link: "/studentorgs", picture: "/sticker button/balletshoes.png", name: "student orgs"},
+    {id: 4, link: "/projects", picture: "/sticker button/pearl.png", name: "projects"}
+  ]
   return (
     <main className="font-serif text-black min-h-screen relative"> 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-16 items-end">
-        <Link href="/personalstatement" className="flex flex-col items-center">
-          <button className="flex flex-col items-center">
-            <div className="w-[100px] h-[100px] flex items-end justify-center">
-              <img src="/sticker button/rose.png" className="max-w-[100px] max-h-[100px] object-contain" />
-            </div>
-            <span>about me!!</span>
-          </button>
-        </Link>
-
-        <Link href="/skills" className="flex flex-col items-center">
-          <button className="flex flex-col items-center">
-            <div className="w-[100px] h-[100px] flex items-end justify-center">
-              <img src="/sticker button/teddy.png" className="max-w-[100px] max-h-[100px] object-contain" />
-            </div>
-            <span>skills</span>
-          </button>
-        </Link>
-
-        <Link href="/studentorgs" className="flex flex-col items-center">
-          <button className="flex flex-col items-center">
-            <div className="w-[100px] h-[100px] flex items-end justify-center">
-              <img src="/sticker button/balletshoes.png" className="max-w-[100px] max-h-[100px] object-contain" />
-            </div>
-            <span>student orgs</span>
-          </button>
-        </Link>
-
-        <Link href="/projects" className="flex flex-col items-center">
-          <button className="flex flex-col items-center">
-            <div className="w-[100px] h-[100px] flex items-end justify-center">
-              <img src="/sticker button/pearl.png" className="max-w-[100px] max-h-[100px] object-contain" />
-            </div>
-            <span>projects</span>
-          </button>
-        </Link>
-      </div>
+        {buttons.map((buttons) => (
+          <MainPageButton
+          key = {buttons.id}
+          link = {buttons.link}
+          picture= {buttons.picture}
+          name = {buttons.name}
+          />
+        ))}
+      </div> 
 
       <div className="absolute flex flex-col" style={{top: '40%', left: '50%', transform: 'translate(-50%, -50%)'}}>
         <img

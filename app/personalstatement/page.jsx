@@ -27,7 +27,7 @@ const statement = () => {
       </div>
 
       <PinkContainer>
-        <div className="text-columns" style={{ columnCount: 2, columnGap: "20px" }}>
+        <div className="text-columns columns-1 md:columns-2 gap-[20px]">
           <div className="column">
           <p>Hi, my name is <b>Dac Nguyen Thi Le</b>, but you can call me Thi. 
           I am currently a junior at the University of Illinois Chicago (UIC), 
@@ -39,18 +39,16 @@ const statement = () => {
 
             <div className="flex gap-2 flex-wrap mt-4">
             Please feel free to reach out to me. Looking forward to connect with you too!
-              <div className="text-columns text-center font-bold justify-center align-center items-center" >
+              <div className="text-columns text-center font-bold">
                 <SmallBox>nguyenthii.ledacc@gmail.com</SmallBox>
-                <div className="flex gap-2 flex-wrap mt-2" style={{ columnCount: 2, columnGap: "20px" }}>
-                  <SmallBox><a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a></SmallBox>
-                  <SmallBox><a href = "https://github.com/">My GitHub</a></SmallBox>
-                </div>
+                <SmallBox><a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a></SmallBox>
+                <SmallBox><a href = "https://github.com/">My GitHub</a></SmallBox>
               </div>
             </div>
           </div>
 
           <div className="column">
-            <img src="/aboutme.JPG" width={380}/>
+            <img src="/aboutme.JPG" width={380} className='rounded-2xl'/>
           </div>
         </div>
       </PinkContainer>

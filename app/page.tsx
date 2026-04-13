@@ -30,6 +30,7 @@ export default function Home() {
           style={{width: 370, height: 370}}
         />
         <h1 className='absolute flex flex-col' style={{bottom:'0%', right:'0%', fontSize:'45px'}}>Thi Le</h1>
+        <div></div>
         <img src="/sticker button/home.png" className='absolute flex flex-col' style={{bottom:'0%', left:'0%'}} width={100}></img>
         <img src="/sticker button/pie.png" className='absolute flex flex-col' style={{top:'0%', left:'0%'}} width={100}></img>
         <img src="/sticker button/phone.png" className='absolute flex flex-col' style={{top:'50%', right:'-10%'}} width={100}></img>

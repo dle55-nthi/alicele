@@ -15,7 +15,7 @@ export default function skills() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center font-serif">
-      <div className="flex gap-2 items-end mb-[-20px] self-end mr-80 z-10 relative">
+      <div className="flex gap-2 items-end mb-[-20px] z-10 relative w-full justify-center md:justify-end md:pr-80">
         {buttons.map((buttons) => (
           <MenuButton
           key = {buttons.id}

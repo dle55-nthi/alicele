@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FAF3EB;
   --foreground: #000000;
 }
 
@@ -17,10 +17,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: 
-    url('/background2.jpg') no-repeat center center fixed;
-  background-size: cover;
 }

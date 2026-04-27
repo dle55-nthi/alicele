@@ -2,60 +2,36 @@ import React from 'react'
 import Link from 'next/link'
 import PinkContainer from "@/app/container"
 import SmallBox from "@/app/skills/component";
-import ReturnButton from "@/app/return-button";  
-import { MenuButton } from "@/app/smaller-button";
+import Button from "@/app/buttons.tsx";
 
-const statement = () => {
-  const buttons = [
-    // {id: 1, link: "/personalstatement", picture: "/sticker button/rose.png", name: "about me!!"},
-    {id: 2, link: "/skills", picture: "/sticker button/teddy.png", name: "skills"},
-    {id: 3, link: "/studentorgs", picture: "/sticker button/balletshoes.png", name: "student orgs"},
-    {id: 4, link: "/projects", picture: "/sticker button/pearl.png", name: "projects"}
-  ]
-
+const Statement = () => {
   return (
-    <main className='font-serif min-h-screen flex flex-col items-center justify-center'>
-      <div className="flex gap-2 items-end mb-[-20px] self-end mr-50 z-10 relative">
-      {buttons.map((buttons) => (
-          <MenuButton
-          key = {buttons.id}
-          link = {buttons.link}
-          picture = {buttons.picture}
-          name = {buttons.name}
-          />
-        ))}
-      </div>
-
-      <PinkContainer>
-        <div className="text-columns columns-1 md:columns-2 gap-[20px]">
-          <div className="column">
-          <p>Hi, my name is <b>Dac Nguyen Thi Le</b>, but you can call me Thi. 
-          I am currently a junior at the University of Illinois Chicago (UIC), 
-          majoring in <b>Data Science</b> with a concentration in Business Analytics.
-          Currently seeking a Chicago-based summer role where I can blend tech, analytics, and a little bit of curiosity ✨</p>
-          <br></br>
-          
-          <i syle={{fontSize:"8px"}}>Fun fact: I like braiding.</i>
-
-            <div className="flex gap-2 flex-wrap mt-4">
-            Please feel free to reach out to me. Looking forward to connect with you too!
-              <div className="text-columns text-center font-bold">
-                <SmallBox>nguyenthii.ledacc@gmail.com</SmallBox>
-                <SmallBox><a href = "https://www.linkedin.com/in/ldnthi12/">My Linkedin</a></SmallBox>
-                <SmallBox><a href = "https://github.com/">My GitHub</a></SmallBox>
+    <main className="min-h-screen flex flex-col items-center justify-center">
+      <section id = "statement">
+        <PinkContainer>
+          <div className="text-columns columns-1 md:columns-2 gap-[20px]">
+            <div className="flex flex-col column space-y-4 justify-center">
+              <p>i am a rising senior majoring in data science, concentrated in business analytics. 
+                i enjoy building systems that make data feel less like numbers and more like
+                something you can actually use.</p>
+              <p>fun fact: i use my phone album as my diary, i take picture of everything! </p>
+              <p>this summer, i am participating as a sprintern at UIC LIT Lab!</p>
+              happy to connect with you!
+              <div className='flex gap-2'>
+                <SmallBox href="nguyenthii.ledacc@gmail.com">email</SmallBox>
+                <SmallBox><a href = "https://www.linkedin.com/in/ldnthi12/">linkedin</a></SmallBox>
+                <SmallBox><a href = "https://github.com/">github</a></SmallBox>
               </div>
             </div>
-          </div>
 
-          <div className="column">
-            <img src="/aboutme.JPG" width={380} className='rounded-2xl'/>
+            <div className="column">
+              <img src="/statement.JPG" width={380} className='rounded-2xl'/>
+            </div>
           </div>
-        </div>
-      </PinkContainer>
-    
-      <ReturnButton/>
+        </PinkContainer>
+      </section>
     </main>
   )
 }
 
-export default statement
+export default Statement

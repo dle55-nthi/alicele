@@ -1,22 +1,67 @@
-import React from 'react'
-import Link from 'next/link'
+"use client"
+import React, { useState, useEffect } from "react";
 
-interface ButtonProp {
-    link: string;
-    picture: string;
-    name: string;
-}
+const items = [
+  { label: "Intro", id: "top" },
+  { label: "Statement", id: "statement" },
+  { label: "Projects", id: "projects" },
+  { label: "Skills", id: "skills" },
+  { label: "Org", id: "orgs" },
+];
 
-export function MainPageButton({ link, picture, name }: ButtonProp) {
-    return (
-        <Link href={link} className="relative group flex flex-col items-center gap-2 transition-all duration-300">
-            <div className="relative w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] flex items-end justify-center">
-                <div className="absolute inset-0 rounded-full blur-2xl opacity-0 group-hover:opacity-70 transition-all duration-300 bg-[#FFE3EA] scale-90 group-hover:scale-125"></div>
-                <img src={picture} className="relative max-w-[80px] max-h-[80px] sm:max-w-[90px] sm:max-h-[90px] md:max-w-[100px] md:max-h-[100px] object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_20px_rgba(255,227,234,0.9)]" />
-            </div>
-            <span className="text text-sm sm:text-base md:text-lg text-black transition-all duration-300 group-hover:tracking-widest ">
-                {name}
-            </span>
-        </Link>
-    );
-}
+const SideMenu = () => {
+  const [active, setActive] = useState("top");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 3;
+
+      items.forEach((item) => {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+
+          if (scrollPos >= top && scrollPos < top + height) {
+            setActive(item.id);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTo = (id : string) => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
+  return (
+    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50">
+      <div className="flex flex-col gap-3 bg-white/40 backdrop-blur-md border border-black/10 rounded-2xl px-3 py-4 shadow-md">
+
+        {items.map((item) => (
+          <button key={item.id} onClick={() => {
+                scrollTo(item.id);
+            }}
+            className={
+                "text-sm px-3 py-2 rounded-xl transition-all duration-300 text-left " +
+                (active === item.id
+                ? "bg-[#EDE3E7] text-black"
+                : "text-black/60 hover:bg-[#EDE3E7]/30")
+            }
+            >
+            {item.label}
+          </button>
+        ))}
+
+      </div>
+    </div>
+  );
+};
+
+export default SideMenu;

@@ -8,7 +8,7 @@ export default function FloatingFavorites() {
     "sushi",
     "matcha latte",
     "banhmi",
-    "beef noodle soup",
+    "bunbohue",
     "chicken curry",
     "popeyes",
     "spicy salmon",
@@ -21,7 +21,14 @@ export default function FloatingFavorites() {
     "honey greek yogurt",
     "banana smoothie",
     "nuttella crepe",
-    "skincare girlie",
+    "creme brulee",
+    "chia seed yougurt",
+    "vanilla chai",
+    "chai latte",
+    "pho",
+    "mi quang",
+    "iced tea",
+    "dumplings"
   ];
 
   const images = [
@@ -64,8 +71,8 @@ export default function FloatingFavorites() {
         content: item.content,
         left: lane * laneWidth + laneWidth / 2,
         size: Math.random() * 50 + 40,
-        duration: 18 + (i % 5),
-        delay: i * 0.4,
+        duration: 10 + (i % 5),
+        delay: i * 0.3,
       };
     });
 
@@ -75,7 +82,7 @@ export default function FloatingFavorites() {
 
   const floatAnimation = {
     y: ["100vh", "-120vh"],
-    opacity: [0, 1, 1, 0],
+    opacity: [1, 1, 1, 1],
   };
 
   const floatTransition = (item) => ({

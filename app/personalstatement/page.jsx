@@ -14,8 +14,8 @@ const Statement = () => {
               <p>i am a rising senior majoring in data science, concentrated in business analytics. 
                 i enjoy building systems that make data feel less like numbers and more like
                 something you can actually use.</p>
-              <p>fun fact: i use my phone album as my diary, i take picture of everything! </p>
-              <p>this summer, i am participating as a sprintern at UIC LIT Lab!</p>
+              <p>fun fact: i use my phone album as my diary, i take picture of everything! (like literally everything!!!) </p>
+              <p>this summer, i am participating as a sprintern at UIC Innovation Center!</p>
               happy to connect with you!
               <div className='flex gap-2'>
                 <SmallBox href="nguyenthii.ledacc@gmail.com">email</SmallBox>
@@ -25,7 +25,7 @@ const Statement = () => {
             </div>
 
             <div className="column">
-              <img src="/statement.JPG" width={380} className='rounded-2xl'/>
+              <img src="/statement.JPG" width={350} className='rounded-2xl'/>
             </div>
           </div>
         </PinkContainer>

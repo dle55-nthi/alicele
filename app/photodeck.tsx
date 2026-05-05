@@ -158,7 +158,7 @@ export default function PhotoDeck({ photos }: { photos: Photo[] }) {
               var isActive = i === currentIndex;
 
               var dotStyle =
-                "w-2 h-2 rounded-full transition-all duration-300";
+                "w-2 h-2 rounded-full transition-all duration-150";
 
               if (isActive === true) {
                 dotStyle = "w-6 h-2 rounded-full bg-black";

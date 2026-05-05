@@ -31,7 +31,7 @@ const Projects = () => {
     }
   ];
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center">
+    <main className="min-h-50 flex flex-col items-center justify-center">
       <section id = "projects" className="flex flex-col justify-center text-center">
         <h1 className="text-6xl font-serif text-black/80 tracking-wide">projects</h1>
         <PinkContainer>
